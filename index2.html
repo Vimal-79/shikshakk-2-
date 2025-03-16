@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login to Shikshakk </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="universal">
+    <img class="login-back" src="images\login-1.jpg" alt="image">
+    <div class="login-container">
+        <h2>Login to Shikshakk</h2> 
+
+        <!-- Login Form -->
+        <form action="index.html" onsubmit="return validateForm()">
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number" function="mobileNo()"required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <div class="divider">
+            <hr>
+            <span>or</span>
+            <hr>
+        </div>
+
+        <!-- Social Login Options -->
+        <div class="social-login">
+            <button class="google-login" onclick="googleLogin()">Login with Google</button>
+            <button class="facebook-login" onclick="facebookLogin()">Login with Facebook</button>
+        </div>
+    </div>
+    <div class="image">
+      <img src="images\login-2.png" alt="image">
+    </div>
+  </div>
+    <script src="script2.js"></script>
+</body>
+</html>
